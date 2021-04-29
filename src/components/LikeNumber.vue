@@ -7,9 +7,14 @@
 
 <script>
 export default {
+  data() {
+    return {
+      number: 10
+    }
+  },
   methods: {
     increment() {
-      this.number += 1;
+      this.number += 1
     }
   },
   props: {
