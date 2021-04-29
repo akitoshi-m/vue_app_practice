@@ -12,6 +12,8 @@ export default {
       this.number += 1;
     }
   },
-  props: ["number"]
+  props: {
+    totalNumber: String
+  }
 }
 </script>
