@@ -1,5 +1,6 @@
 <template>
   <div>
+    <slot>デフォルトのタイトル</slot>
     <p>いいね{{ number }}</p>
     <button @click="increment">+1</button>
   </div>

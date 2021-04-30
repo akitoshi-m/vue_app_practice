@@ -1,7 +1,10 @@
 <template>
   <div>
     <LikeHeader></LikeHeader>
-    <LikeNumber :number="number"></LikeNumber>
+    <LikeNumber :number="number">
+      <h2>totalいいね数</h2>
+      <h2>{{ number }}</h2>
+    </LikeNumber>
   </div>
 </template>
 

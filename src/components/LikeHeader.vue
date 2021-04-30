@@ -1,5 +1,5 @@
 <template>
-  <p>ヘッダー{{ text }}</p>
+  <p>ヘッダー</p>
 </template>
 
 <script>
