@@ -12,7 +12,7 @@
 export default ({
   methods: {
     clickUrl() {
-      this.$router.push("users");
+      this.$router.push("users/1/profile");
     }
   }
 })
