@@ -5,19 +5,19 @@
     </h1>
     <button @click="clickUrl">Usersへの切り替えボタン</button>
     <p>{{ doubleCount }}</p>
-    <button @click="increseCount">ボタン</button>
+    <button @click="increment(20)">+1ボタン</button>
+    <button @click="decrement(2)">-1ボタン</button>
   </div>
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 
 export default ({
   methods: {
+    ...mapMutations(["increment", "decrement"]),
     clickUrl() {
       this.$router.push("users/1/profile");
-    },
-    increseCount() {
-      this.$store.state.count += 1
     }
   },
   computed: {
