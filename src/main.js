@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import LikeNumber from './components/LikeNumber.vue';
 import router from "./router";
+import store from "./store";
 
 // LikeNumberはグローバル登録されている
 Vue.config.productionTip = false
@@ -14,5 +15,6 @@ Vue.directive("border", function(el, binding) {
 
 new Vue({
   router,
+  store,
   render: h => h(App),
 }).$mount('#app')
